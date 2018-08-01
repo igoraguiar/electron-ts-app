@@ -1,0 +1,26 @@
+{
+    "name": "electron-ts-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "electron src/index.js",
+        "watch": "tsc --watch",
+        "dev": "tsc && electron src/index.js & tsc --watch ",
+        "package": "electron-packager --asar --out=build --overwrite  ."
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/knockout": "^3.4.58",
+        "@types/knockout.punches": "^0.5.32",
+        "electron": "2.0.6",
+        "electron-packager": "^12.1.0",
+        "ts-node": "^7.0.0",
+        "typescript": "^3.0.1"
+    },
+    "dependencies": {
+        "knockout": "^3.4.2",
+        "knockout.punches": "^0.5.1"
+    }
+}
